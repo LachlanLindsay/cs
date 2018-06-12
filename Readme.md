@@ -1,4 +1,5 @@
-Practicing Implementing Various Algorithms
+Implementing Various Algorithms
 
 * Bubble sort 
 * Selection Sort
+* Insertion Sort
