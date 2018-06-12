@@ -1,11 +1,11 @@
-package com.lachlanlindsay;
+package com.lachlanlindsay.sort;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import static com.lachlanlindsay.BubbleSorter.sort;
+import static com.lachlanlindsay.Sort.BubbleSort.sort;
 
-public class BubbleSorterTest {
+public class BubbleSortTest {
 
     @Test
     public void testSort() {

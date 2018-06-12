@@ -1,4 +1,6 @@
-package com.lachlanlindsay;
+package com.lachlanlindsay.Sort;
+
+import com.lachlanlindsay.ArrayUtility;
 
 /**
  * Degrades quickly
@@ -10,7 +12,7 @@ package com.lachlanlindsay;
  *   1 000 000   steps to sort 1000 items
  *
  * */
-public class BubbleSorter implements Sorter {
+public class BubbleSort implements Sorter {
 
     public static void sort(int[] array) {
         for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {

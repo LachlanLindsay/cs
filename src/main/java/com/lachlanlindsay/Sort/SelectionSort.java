@@ -1,4 +1,6 @@
-package com.lachlanlindsay;
+package com.lachlanlindsay.Sort;
+
+import com.lachlanlindsay.ArrayUtility;
 
 /**
  * unstable sort algorithm
@@ -8,7 +10,7 @@ package com.lachlanlindsay;
  * 10 000      steps to sort 100 items
  * 1 000 000   steps to sort 1000 items
  */
-public class SelectionSorter implements Sorter {
+public class SelectionSort implements Sorter {
 
     public static void sort(int[] array) {
 
