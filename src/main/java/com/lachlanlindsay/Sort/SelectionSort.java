@@ -5,12 +5,13 @@ import com.lachlanlindsay.ArrayUtility;
 /**
  * unstable sort algorithm
  * degrades quickly
+ *
  * O(n^2) quadratic performance
  * 100         steps to sort 10 items
  * 10 000      steps to sort 100 items
  * 1 000 000   steps to sort 1000 items
  */
-public class SelectionSort implements Sorter {
+public class SelectionSort {
 
     public static void sort(int[] array) {
 

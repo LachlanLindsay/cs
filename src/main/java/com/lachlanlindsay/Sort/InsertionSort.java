@@ -9,7 +9,7 @@ package com.lachlanlindsay.Sort;
  * <p>
  * https://en.wikipedia.org/wiki/Insertion_sort
  */
-public class InsertionSort implements Sorter {
+public class InsertionSort {
 
     /*
      * outer loop is growing partition by one.
