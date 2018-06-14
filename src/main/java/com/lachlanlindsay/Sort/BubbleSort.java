@@ -12,7 +12,7 @@ import com.lachlanlindsay.ArrayUtility;
  *   1 000 000   steps to sort 1000 items
  *
  * */
-public class BubbleSort implements Sorter {
+public class BubbleSort {
 
     public static void sort(int[] array) {
         for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {

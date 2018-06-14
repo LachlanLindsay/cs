@@ -1,6 +1,7 @@
 package com.lachlanlindsay;
 
 import com.lachlanlindsay.Sort.BubbleSort;
+import com.lachlanlindsay.Sort.InsertionSort;
 import com.lachlanlindsay.Sort.SelectionSort;
 
 public class Main {
@@ -11,5 +12,7 @@ public class Main {
         BubbleSort.sort(intArray);
 
         SelectionSort.sort(intArray);
+
+        InsertionSort.sort(intArray);
     }
 }

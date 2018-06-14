@@ -1,9 +1,9 @@
 package com.lachlanlindsay;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import static com.lachlanlindsay.ArrayUtility.swap;
+import static org.junit.Assert.assertArrayEquals;
 
 public class ArrayUtilityTest {
 
@@ -13,7 +13,7 @@ public class ArrayUtilityTest {
         int[] array = {1, 3};
 
         swap(array, 0, array.length - 1);
-        Assert.assertArrayEquals(swappedArray, array);
+        assertArrayEquals(swappedArray, array);
     }
 
 }

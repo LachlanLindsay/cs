@@ -1,9 +1,9 @@
 package com.lachlanlindsay.sort;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import static com.lachlanlindsay.Sort.SelectionSort.sort;
+import static org.junit.Assert.assertArrayEquals;
 
 public class SelectionSortTest {
 
@@ -13,7 +13,6 @@ public class SelectionSortTest {
         int[] unsortedArray = {3, 4, 9, 0};
 
         sort(unsortedArray);
-        Assert.assertArrayEquals(sortedArray, unsortedArray);
-
+        assertArrayEquals(sortedArray, unsortedArray);
     }
 }
