@@ -15,9 +15,5 @@ public class MergeSortTest {
         MergeSort.sort(array);
 
         assertArrayEquals(array, sortedArray);
-
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
     }
 }
