@@ -32,7 +32,6 @@ public class MergeSort {
         split(input, midPoint, end);   // right node
 
         merge(input, start, midPoint, end);
-        int x = 1;
     }
 
     private static void merge(int[] input, int start, int mid, int end) {
@@ -41,17 +40,20 @@ public class MergeSort {
             return;
         }
 
-        int i = start;
-        int j = mid;
+        int leftIndex = start;
+        int rightIndex = mid;
         int tempIndex = 0;
 
         int[] temp = new int[end - start];
 
-        while (i < mid && j < end) {
-            temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
+        //merge left and right indexes and always take the smallest element
+        while (leftIndex < mid && rightIndex < end) {
+            if (input[leftIndex] <= input[rightIndex]) {
+                temp[tempIndex++] = input[leftIndex++];
+            } else temp[tempIndex++] = input[rightIndex++];
         }
 
-        System.arraycopy(input, i, input, start + tempIndex, mid - i);
+        System.arraycopy(input, leftIndex, input, start + tempIndex, mid - leftIndex);
         System.arraycopy(temp, 0, input, start, tempIndex);
     }
 }
