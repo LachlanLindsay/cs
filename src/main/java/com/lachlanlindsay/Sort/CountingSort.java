@@ -7,7 +7,7 @@ package com.lachlanlindsay.Sort;
  * Not an in-place algorithm because of the
  */
 public class CountingSort {
-    public final static int MAXIMUM_VALUE = 5;
+    private final static int MAXIMUM_VALUE = 5;
 
     public static void sort(int[] array) {
         int[] countArray = new int[getCountArraySize()];
@@ -16,9 +16,8 @@ public class CountingSort {
         int total = 0;
         for (int i = 0; i < countArray.length; i++) {
             for (int j = 0; j < countArray[i]; j++) {
-                array[total + j] = i;
+                array[total++] = i;
             }
-            total += countArray[i];
         }
     }
 
