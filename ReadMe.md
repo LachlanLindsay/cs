@@ -11,4 +11,5 @@ Whats been implemented so far.
 * Selection Sort
 * Insertion Sort
 * Shell Sort
-* Merge Sort 
+* Merge Sort
+* Counting Sort
