@@ -4,7 +4,7 @@ package com.lachlanlindsay.Sort;
  * Values must be between 0 - 5 inclusive
  * unstable
  * O(n) - :)
- * Not an in-place algorithm because of the
+ * Not an in-place algorithm because of the count array
  */
 public class CountingSort {
     private final static int MAXIMUM_VALUE = 5;
