@@ -3,9 +3,9 @@ package com.lachlanlindsay.Sort;
 /**
  * quadratic sorting algorithm
  * More efficient in practice than most other simple quadratic (i.e., O(n2)) algorithms such as selection sort or bubble sort
- * Adaptive, i.e., efficient for data sets that are already substantially sorted: the time complexity is O(nk) when each element in the input is no more than k places away from its sorted position
- * Stable; i.e., does not change the relative order of elements with equal keys
- * In-place; i.e., only requires a constant amount O(1) of additional memory spac
+ * Adaptive, i.e. efficient for data sets that are already substantially sorted: the time complexity is O(nk) when each element in the input is no more than k places away from its sorted position
+ * Stable; i.e. does not change the relative order of elements with equal keys
+ * In-place; i.e. only requires a constant amount O(1) of additional memory spac
  * <p>
  * https://en.wikipedia.org/wiki/Insertion_sort
  */
