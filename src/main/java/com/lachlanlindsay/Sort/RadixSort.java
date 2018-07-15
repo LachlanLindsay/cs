@@ -7,6 +7,8 @@ package com.lachlanlindsay.Sort;
  * Sorted based on individual digit or letter position
  * Must use a stable sort algorithm at each stage
  * Starts with the position with the least weight
+ *
+ * https://www.cs.usfca.edu/~galles/visualization/RadixSort.html
  */
 public class RadixSort {
 
@@ -33,6 +35,12 @@ public class RadixSort {
             countArray[j] += countArray[j - 1];
         }
 
+        //working from the back of the input array we first grab the number
+        //look at the current getDigit in the first pass this is the least significant number
+        //compare that to the count array in the position ie 1234, would look a the 4th index
+        //reduce the counting array by one
+        //put that number in to the relevant position in the array.
+        //this is is how we maintain the stable sort
         int[] temp = new int[numberOfItems];
         for (int tempIndex = numberOfItems - 1; tempIndex >= 0; tempIndex--) {
             temp[--countArray[getDigit(position, input[tempIndex], radix)]] = input[tempIndex];
