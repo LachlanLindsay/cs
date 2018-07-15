@@ -13,3 +13,4 @@ Whats been implemented so far.
 * Shell Sort
 * Merge Sort
 * Counting Sort
+* Radix Sort
