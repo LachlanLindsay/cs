@@ -1,5 +1,7 @@
 package com.lachlanlindsay.Sort;
 
+import static com.lachlanlindsay.Sort.RadixUtil.getCountArrayIndexPosition;
+
 /**
  * Makes assumptions about the data
  * Data must have the same radix and width
@@ -7,10 +9,10 @@ package com.lachlanlindsay.Sort;
  * Sorted based on individual digit or letter position
  * Must use a stable sort algorithm at each stage
  * Starts with the position with the least weight
- *
+ * <p>
  * https://www.cs.usfca.edu/~galles/visualization/RadixSort.html
  */
-public class RadixSort {
+public class RadixSortInts {
 
     public static void sort(int[] array) {
         final int radix = 10;
@@ -21,12 +23,13 @@ public class RadixSort {
         }
     }
 
-    public static void radixSingleSort(int[] input, int position, int radix) {
+    private static void radixSingleSort(int[] input, int position, int radix) {
         int numberOfItems = input.length;
         int[] countArray = new int[radix];
 
+
         for (int value : input) {
-            countArray[getDigit(position, value, radix)]++;
+            countArray[getCountArrayIndexPosition(position, value, radix)]++;
         }
 
         // Adjust count array -
@@ -43,18 +46,12 @@ public class RadixSort {
         //this is is how we maintain the stable sort
         int[] temp = new int[numberOfItems];
         for (int tempIndex = numberOfItems - 1; tempIndex >= 0; tempIndex--) {
-            temp[--countArray[getDigit(position, input[tempIndex], radix)]] = input[tempIndex];
+            temp[--countArray[getCountArrayIndexPosition(position, input[tempIndex], radix)]] = input[tempIndex];
         }
 
         for (int i = 0; i < numberOfItems; i++) {
             input[i] = temp[i];
         }
-
-    }
-
-
-    public static int getDigit(int position, int value, int radix) {
-        return value / (int) Math.pow(10, position) % radix;
     }
 
     public static int getWidth(int i) {
@@ -68,4 +65,6 @@ public class RadixSort {
 
         return (int) (Math.log10(i) + 1);
     }
+
+
 }
