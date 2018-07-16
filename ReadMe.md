@@ -13,3 +13,6 @@ Inspired by [this](https://github.com/trekhleb/javascript-algorithms/) repositor
 * Merge Sort
 * Counting Sort
 * Radix Sort
+
+###Data Structures
+* SinglyLinkedList
