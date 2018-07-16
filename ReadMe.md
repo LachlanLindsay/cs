@@ -1,11 +1,11 @@
 
-##Java Algorithms & Data Structures
+## Java Algorithms & Data Structures
 
 [![Build Status](https://travis-ci.org/LachlanLindsay/cs.svg?branch=master)](https://travis-ci.org/LachlanLindsay/cs)
 
 Inspired by [this](https://github.com/trekhleb/javascript-algorithms/) repository.
 
-###Sort
+### Sort
 * Bubble sort 
 * Selection Sort
 * Insertion Sort
@@ -14,5 +14,5 @@ Inspired by [this](https://github.com/trekhleb/javascript-algorithms/) repositor
 * Counting Sort
 * Radix Sort
 
-###Data Structures
+### Data Structures
 * SinglyLinkedList
