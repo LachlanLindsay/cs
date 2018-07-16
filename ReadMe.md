@@ -1,12 +1,11 @@
-#Java Algorithms & Data Structures
+
+##Java Algorithms & Data Structures
 
 [![Build Status](https://travis-ci.org/LachlanLindsay/cs.svg?branch=master)](https://travis-ci.org/LachlanLindsay/cs)
 
-I was inspired by [this](https://github.com/trekhleb/javascript-algorithms/) repository and wanted to
-have some fun brushing up on my data structures and algorithms.
+Inspired by [this](https://github.com/trekhleb/javascript-algorithms/) repository.
 
-Whats been implemented so far.
-
+###Sort
 * Bubble sort 
 * Selection Sort
 * Insertion Sort

@@ -6,15 +6,15 @@
 
     <groupId>lachlanlindsay</groupId>
     <artifactId>cs</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>10</source>
+                    <target>10</target>
                 </configuration>
             </plugin>
         </plugins>
