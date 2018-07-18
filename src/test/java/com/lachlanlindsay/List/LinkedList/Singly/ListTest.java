@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class ListTest {
@@ -21,18 +22,17 @@ public class ListTest {
         linkedList.addToFront(toyota);
         linkedList.addToFront(ford);
 
+        assertEquals(3, linkedList.getSize());
         assertFalse(linkedList.isEmpty());
-        linkedList.printList();
 
         linkedList.removeFromFront();
-        linkedList.printList();
+        assertEquals(2, linkedList.getSize());
 
         linkedList.removeFromFront();
-        linkedList.printList();
+        assertEquals(1, linkedList.getSize());
 
         linkedList.removeFromFront();
-        linkedList.printList();
+        assertEquals(0, linkedList.getSize());
 
     }
-
 }
