@@ -14,8 +14,15 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>10</source>
-                    <target>10</target>
+                    <target>1.10</target>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.ow2.asm</groupId>
+                        <artifactId>asm</artifactId>
+                        <version>6.2</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
@@ -26,5 +33,4 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
-
 </project>
