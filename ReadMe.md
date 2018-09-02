@@ -1,5 +1,5 @@
 
-## Java Algorithms & Data Structures
+ ## Java Algorithms & Data Structures
 
 [![Build Status](https://travis-ci.org/LachlanLindsay/cs.svg?branch=master)](https://travis-ci.org/LachlanLindsay/cs)
 
@@ -16,3 +16,4 @@ Inspired by [this](https://github.com/trekhleb/javascript-algorithms/) repositor
 
 ### Data Structures
 * SinglyLinkedList
+* DoublyLinkedList

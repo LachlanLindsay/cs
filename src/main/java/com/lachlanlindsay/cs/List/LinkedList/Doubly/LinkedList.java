@@ -1,14 +1,33 @@
-package com.lachlanlindsay.cs.List.LinkedList.Singly;
+package com.lachlanlindsay.cs.List.LinkedList.Doubly;
 
 public class LinkedList<T> {
 
     private LinkedListNode head;
+    private LinkedListNode tail;
+
     private int size = 0;
 
     public void addToFront(T item) {
         LinkedListNode node = new LinkedListNode<>(item);
-        node.setNext(head);
+        if (isEmpty()) {
+            tail = node;
+        } else {
+            node.setNext(head);
+            head.setPrevious(node);
+        }
+
         head = node;
+        size++;
+    }
+
+    public void addToEnd(T item) {
+        LinkedListNode node = new LinkedListNode(item);
+        if (isEmpty()) {
+            head = node;
+        } else {
+            tail.setNext(node);
+            node.setPrevious(tail);
+        }
         size++;
     }
 
@@ -20,6 +39,19 @@ public class LinkedList<T> {
         head = head.getNext();
         size--;
         removedNode.setNext(null);
+        removedNode.setPrevious(null);
+        return removedNode;
+    }
+
+    public LinkedListNode removeFromEnd() {
+        if (isEmpty()) {
+            return null;
+        }
+
+        LinkedListNode removedNode = tail;
+        tail = tail.getPrevious();
+        size--;
+        removedNode.setPrevious(null);
         return removedNode;
     }
 
@@ -36,7 +68,7 @@ public class LinkedList<T> {
         System.out.print("HEAD -> ");
         while (current != null) {
             System.out.print(current);
-            System.out.print(" -> ");
+            System.out.print(" <-> ");
             current = current.getNext();
         }
         System.out.println("null");
