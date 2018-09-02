@@ -30,7 +30,7 @@ public class RadixSortIntsTest {
     }
 
     @Test
-    public void get() {
+    public void testWidth() {
         assertEquals(1, RadixSortInts.getWidth(1));
         assertEquals(1, RadixSortInts.getWidth(0));
         assertEquals(1, RadixSortInts.getWidth(5));
