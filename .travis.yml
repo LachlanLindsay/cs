@@ -1,3 +1,3 @@
-language: Neighbours
+language: java
 jdk:
   - openjdk10
