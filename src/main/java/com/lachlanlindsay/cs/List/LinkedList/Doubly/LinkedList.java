@@ -40,7 +40,10 @@ public class LinkedList<T> {
         size--;
         removedNode.setNext(null);
         removedNode.setPrevious(null);
+
         return removedNode;
+
+
     }
 
     public LinkedListNode removeFromEnd() {
