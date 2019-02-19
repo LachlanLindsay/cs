@@ -1,10 +1,10 @@
-package com.lachlanlindsay.cs.List.LinkedList.Singly;
+package com.lachlanlindsay.cs.java;
 
 import org.junit.Test;
 
 import java.util.Arrays;
 
-public class scopeTest {
+public class ScopeTest {
 
     @Test
     public void scopeTest() {
@@ -35,11 +35,4 @@ public class scopeTest {
             System.out.println("nextState local scope = " + Arrays.toString(states));
         } while (loops > 0);
     }
-
-    private void printArray(int[] x) {
-        for (int i : x) {
-            System.out.print(x);
-        }
-    }
-
 }
