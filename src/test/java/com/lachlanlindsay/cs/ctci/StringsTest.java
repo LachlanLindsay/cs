@@ -6,6 +6,14 @@ import org.junit.Test;
 public class StringsTest {
 
     @Test
+    public void testCompression() {
+        Assert.assertEquals("A1e4", Strings.stringCompression("Aeeee"));
+        Assert.assertEquals("", Strings.stringCompression(""));
+        Assert.assertEquals("A", Strings.stringCompression("A"));
+        Assert.assertNull(Strings.stringCompression(null));
+    }
+
+    @Test
     public void offByOneOrLess() {
         Assert.assertTrue(Strings.oneAway("apple", "apple"));
         Assert.assertTrue(Strings.oneAway("apple", "appl"));

@@ -39,6 +39,39 @@ public class Strings {
             }
         }
         return dif < 2;
-
     }
+
+    /***
+     * Cracking the coding interview question 1.6
+     * @param s
+     * @return compressed version of a string aabcccccaaa becomes a2b1c5a3
+     */
+    public static String stringCompression(final String s) {
+        if (s == null || s.isEmpty()) {
+            return s;
+        }
+
+        int counter = 0, pointer = 0;
+        String compressed = "";
+        char c = s.charAt(counter);
+        do {
+            if (c == s.charAt(pointer)) {
+                counter++;
+            }
+            pointer++;
+            if (pointer == s.length() || c != s.charAt(pointer)) {
+                compressed += String.valueOf(c) + counter;
+                counter = 0;
+            }
+            if (pointer < s.length() - 1) {
+                c = s.charAt(pointer);
+            }
+        } while (pointer < s.length());
+
+        if (compressed.length() < s.length()) {
+            return compressed;
+        }
+        return s;
+    }
+
 }
