@@ -3,7 +3,7 @@ package com.lachlanlindsay.cs.stack;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PalindromeTest {
+public class PalindromeStackTest {
 
     @Test
     public void testTrue() {

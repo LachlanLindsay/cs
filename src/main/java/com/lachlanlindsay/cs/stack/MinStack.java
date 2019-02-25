@@ -1,6 +1,6 @@
 package com.lachlanlindsay.cs.stack;
 
-
+/* Todo Warning implementation broken */
 class StackItem {
     public int value;
     public StackItem next;
