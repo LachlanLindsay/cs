@@ -1,4 +1,4 @@
-package com.lachlanlindsay.cs.Eula;
+package com.lachlanlindsay.cs.eula;
 
 import org.junit.Test;
 
