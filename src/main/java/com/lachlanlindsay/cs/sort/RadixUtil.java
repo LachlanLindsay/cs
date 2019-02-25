@@ -1,4 +1,4 @@
-package com.lachlanlindsay.cs.Sort;
+package com.lachlanlindsay.cs.sort;
 
 public class RadixUtil {
     public static int getCountArrayIndexPosition(int position, Object value, int radix) {

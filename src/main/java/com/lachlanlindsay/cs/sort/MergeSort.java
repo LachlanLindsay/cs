@@ -1,7 +1,7 @@
-package com.lachlanlindsay.cs.Sort;
+package com.lachlanlindsay.cs.sort;
 
 /**
- * Merge Sort Divides and Concurs
+ * Merge sort Divides and Concurs
  * <p>
  * Recursive merge sort.
  * <p>

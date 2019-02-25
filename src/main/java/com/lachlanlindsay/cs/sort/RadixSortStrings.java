@@ -1,4 +1,4 @@
-package com.lachlanlindsay.cs.Sort;
+package com.lachlanlindsay.cs.sort;
 
 public class RadixSortStrings {
     public static void sort(String[] array) {

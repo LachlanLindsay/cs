@@ -2,7 +2,7 @@ package com.lachlanlindsay.cs.sort;
 
 import org.junit.Test;
 
-import static com.lachlanlindsay.cs.Sort.BubbleSort.sort;
+import static com.lachlanlindsay.cs.sort.BubbleSort.sort;
 import static org.junit.Assert.assertArrayEquals;
 
 public class BubbleSortTest {

@@ -1,4 +1,4 @@
-package com.lachlanlindsay.cs.Sort;
+package com.lachlanlindsay.cs.sort;
 
 import com.lachlanlindsay.cs.ArrayUtility;
 

@@ -1,4 +1,4 @@
-package com.lachlanlindsay.cs.Sort;
+package com.lachlanlindsay.cs.sort;
 
 /**
  * Values must be between 0 - 5 inclusive

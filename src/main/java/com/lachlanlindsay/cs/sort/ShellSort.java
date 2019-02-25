@@ -1,4 +1,4 @@
-package com.lachlanlindsay.cs.Sort;
+package com.lachlanlindsay.cs.sort;
 
 /**
  * Shell short can be implemented as a bubble sort / insertion sort

@@ -1,6 +1,5 @@
 package com.lachlanlindsay.cs.sort;
 
-import com.lachlanlindsay.cs.Sort.SelectionSort;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;

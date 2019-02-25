@@ -1,8 +1,5 @@
 package com.lachlanlindsay.cs.sort;
 
-import com.lachlanlindsay.cs.Sort.RadixSortInts;
-import com.lachlanlindsay.cs.Sort.RadixSortStrings;
-import com.lachlanlindsay.cs.Sort.RadixUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
