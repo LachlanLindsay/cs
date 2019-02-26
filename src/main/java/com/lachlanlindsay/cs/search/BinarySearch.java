@@ -23,11 +23,9 @@ public class BinarySearch {
             if (input[midPoint] > target) {
                 end = midPoint;
             } else if (input[midPoint] < target) {
-                start = midPoint;
+                start = midPoint + 1;
             }
         }
-
         return -1;
-
     }
 }
