@@ -18,7 +18,7 @@ public class PalindromeProductTest {
     @Test
     public void largestPalindrome() {
         int palindrome = PalindromeProduct.findProductsOfLargestPalindrome(999, 100);
-        System.out.println("palindrome = " + palindrome);
+        System.out.println("Palindrome = " + palindrome);
 
     }
 
